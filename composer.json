@@ -1,0 +1,33 @@
+{
+    "name": "habib/attachments",
+    "description": "settings",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed Habib",
+            "email": "mohamedhabibwork@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+        "spatie/image": ">=1.7 < 2",
+        "intervention/image": ">=2.4 < 3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Habib\\Attachment\\": "src/"
+        },
+        "files": [
+            "./src/helpers/main.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Habib\\Attachment\\Providers\\AttachmentServiceProvider"
+            ]
+        }
+    }
+}
