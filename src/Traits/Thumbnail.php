@@ -71,7 +71,7 @@ trait Thumbnail
         }
     }
 
-    public function thumbnail($fieldname = "image", $size = 640)
+    public function thumbnail(?string $fieldname = "image",?int $size = 640)
     {
         $image = $this->$fieldname;
         $path = explode("/", $image);
